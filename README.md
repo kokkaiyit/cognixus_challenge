@@ -30,6 +30,6 @@ https://docs.docker.com/engine/install/
 ### Add new todo task
 - command: curl http://localhost:8000/api/v1/List/ -H "Authorization: Token <token>" -X POST -d title="<title>" -d description="<description>"
 ### Delete a todo task 
-- command: curl http://localhost:8000/api/v1/<id>/ -H "Authorization: Token <token>" -X DELETE
+- command: curl http://localhost:8000/api/v1/task id/ -H "Authorization: Token <token>" -X DELETE
 ### Mark a todo task as completed
-- command: curl http://localhost:8000/api/v1/<id>/ -H "Authorization: Token <token>" -X PUT -d completion="<true/false>" -d title="<title>" -d description="<description>"
+- command: curl http://localhost:8000/api/v1/task id/ -H "Authorization: Token <token>" -X PUT -d completion="<true/false>" -d title="<title>" -d description="<description>"
