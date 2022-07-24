@@ -11,12 +11,12 @@ https://docs.docker.com/engine/install/
 ## 1.2 Instruction for building and running the app
 ### 1. Go to this repo directory and run server.
 - command: docker-compose up -d --build
-### 2. Accessing the web container.
-- command: docker exec -it challenge-web-1 /bin/bash
-### 3. Create a superuser for the server in the container.
-- command: python3 manage.py createsuperuser
 ## 1.3 Instruction for testing the app
-### Check the admin url
+### 1. Accessing the web container.
+- command: docker exec -it challenge-web-1 /bin/bash
+### 2. Create a superuser for the server in the container.
+- command: python3 manage.py createsuperuser
+### 3. Check the admin url
 - link: http://localhost:8000/admin/
 ## 1.4 Interface documentation
 ### 1. Token Authentication
