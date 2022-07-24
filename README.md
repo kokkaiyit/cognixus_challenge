@@ -14,6 +14,7 @@ https://docs.docker.com/engine/install/
 ### 2. Accessing the web container.
 - command: docker exec -it cognixus_challenge-web-1 /bin/bash
 ### 3 Migrate all configurations
+- command: python3 manage.py makemigrations
 - command: python3 manage.py migrate
 ### 4. Create a superuser for the server in the container.
 - command: python3 manage.py createsuperuser
