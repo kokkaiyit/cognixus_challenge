@@ -26,12 +26,12 @@ https://docs.docker.com/engine/install/
 - Click login with Facebook at link: http://localhost:8000/login/
 - Use admin account to set the password of the facebook account in the admin url.
 ### 3. Check authentication token using command
-- command: curl -d "username=<username>" -d "password=<password>" -X post http://localhost:8000/api-token-auth/
+- command: curl -d "username='username'" -d "password='password'" -X post http://localhost:8000/api-token-auth/
 ### 4. List all todo tasks
-- command: curl http://localhost:8000/api/v1/List/ -H "Authorization: Token <token>" -H 'Accept: application/json; indent=4'
+- command: curl http://localhost:8000/api/v1/List/ -H "Authorization: Token 'token'" -H 'Accept: application/json; indent=4'
 ### 5. Add new todo task
-- command: curl http://localhost:8000/api/v1/List/ -H "Authorization: Token <token>" -X POST -d title="<title>" -d description="<description>"
+- command: curl http://localhost:8000/api/v1/List/ -H "Authorization: Token 'token'" -X POST -d title="'title'" -d description="'description'"
 ### 6. Delete a todo task 
-- command: curl http://localhost:8000/api/v1/task id/ -H "Authorization: Token <token>" -X DELETE
+- command: curl http://localhost:8000/api/v1/task id/ -H "Authorization: Token 'token'" -X DELETE
 ### 7. Mark a todo task as completed
-- command: curl http://localhost:8000/api/v1/task id/ -H "Authorization: Token <token>" -X PUT -d completion="<true/false>" -d title="<title>" -d description="<description>"
+- command: curl http://localhost:8000/api/v1/task id/ -H "Authorization: Token 'token'" -X PUT -d completion="true" -d title="'title'" -d description="'description'"
